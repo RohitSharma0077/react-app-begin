@@ -1,23 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
 
+import FirstComponent from './components/FirstComponent';
+
 function App() {
+
+  const val_pass_to_other_component = [
+    { key1: 'Key1 value pass via prop from other component', key2: 'key2 value pass via prop from other component' },
+    { key3: 'key3 value via prop from other component' },
+
+  ];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Lets get start</h1>
+      <FirstComponent 
+        key1= { val_pass_to_other_component[0].key1}
+        key2= { val_pass_to_other_component[0].key2}
+        key3= { val_pass_to_other_component[1].key3}>
+      </FirstComponent>
     </div>
   );
 }

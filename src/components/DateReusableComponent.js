@@ -1,4 +1,6 @@
-function DateReusableComponent(){
+
+
+const DateReusableComponent = () => {
 
     const month = new Date().toLocaleDateString('en-US', {month: 'long'});
     const day = new Date().toLocaleDateString('en-US', {day: '2-digit'});

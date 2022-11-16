@@ -1,6 +1,6 @@
 
 
-function CardWrapper(props){
+ const CardWrapper = (props) => {
 
     return(
 

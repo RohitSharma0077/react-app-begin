@@ -56,7 +56,7 @@ import { useState } from 'react';
                 <li>{props.object_values[1].key2}</li>
           
 
-            <h3>Dynamic list access props using map function</h3>
+            <h3>Dynamic list access using map function</h3>
             <FormComponent onSaveForm={onSaveFormHandler} ></FormComponent>  
                 
                 <h5>key 1 list</h5>

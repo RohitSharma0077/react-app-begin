@@ -67,9 +67,9 @@ return(
         <div style={{background:"grey"}}>
              <form onSubmit={formSubmitHandler}>
                 <label for="fname">First name:</label><br/>
-                <input type="text" value={Current_fname_val} className="fname" onChange={inputFnameChange}/><br/><br/>
+                <input required type="text" value={Current_fname_val} className="fname" onChange={inputFnameChange}/><br/><br/>
                 <label for="lname">Last name:</label><br/>
-                <input type="text" value={Current_lname_val} className="lname" onChange={inputLnameChange}/><br/><br/>
+                <input required type="text" value={Current_lname_val} className="lname" onChange={inputLnameChange}/><br/><br/>
                 <input type="submit" value="Submit"/>
             </form>
         </div>

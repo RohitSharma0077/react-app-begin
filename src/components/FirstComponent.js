@@ -36,7 +36,7 @@ import { useState } from 'react';
 
     return(
 
-        // here cardwrapper is custom tag component which is used as prop.children
+        // here instead of wrapping with wrapping div, we can use 'cardwrapper' a custom tag component which is used by prop.children
         <CardWrapper> 
             
             <DateReusableComponent></DateReusableComponent>

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-const FormComponent = () => {
+const FormComponent = (props) => {
 
     // use destructuring 
     const [Current_fname_val, updateFnameField ] = useState('');
@@ -46,12 +46,16 @@ const FormComponent = () => {
     const formSubmitHandler = (event) => {
         event.preventDefault();
 
-        const all_form_data ={
-            fname: Current_fname_val,
-            lname: Current_lname_val,
+        const all_form_data_build_pass ={
+            key1: Current_fname_val,
+            key2: Current_lname_val,
         }
 
-        console.log(all_form_data);
+
+        console.log('Current/child file: in form component file');
+        // child to parent chain: link up chain
+        console.log(all_form_data_build_pass);
+        props.onSaveForm(all_form_data_build_pass);
 
         // reset the form after submit all fields : two way binding 
         updateFnameField('');
